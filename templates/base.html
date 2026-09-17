@@ -11,6 +11,8 @@
     <header>
         <nav>
             <ul>
+                <li><a href="{% url 'app2:vista1' %}">App2 - Vista 1</a></li>
+                <li><a href="{% url 'app2:vista2' %}">App2 - Vista 2</a></li>
                 <li><a href="{% url 'inicio' %}">Inicio</a></li>
                 <li><a href="{% url 'app1:vista1' %}">App1 - Vista 1</a></li>
                 <li><a href="{% url 'app1:vista2' %}">App1 - Vista 2</a></li>
@@ -20,14 +22,12 @@
 
     <main>
         {% block content %}
-       
         {% endblock %}
     </main>
 
     <footer>
         <p>&copy; 2026 Mi Proyecto Django</p>
     </footer>
-
 
     <script src="{% static 'js/scripts.js' %}"></script>
 </body>
